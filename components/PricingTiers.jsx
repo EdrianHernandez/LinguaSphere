@@ -1,8 +1,7 @@
 import React from 'react';
-import { PricingPlan } from '../types';
 import { Check, Star } from 'lucide-react';
 
-const plans: PricingPlan[] = [
+const plans = [
   {
     id: 'basic',
     name: 'Basic',
@@ -32,7 +31,7 @@ const plans: PricingPlan[] = [
   }
 ];
 
-const PricingTiers: React.FC = () => {
+const PricingTiers = () => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
