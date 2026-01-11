@@ -4,7 +4,7 @@ import FeaturesList from './components/FeaturesList';
 import PricingTiers from './components/PricingTiers';
 import TestimonialGrid from './components/TestimonialGrid';
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <div className="min-h-screen font-sans text-gray-900 bg-white">
       {/* Header / Navbar */}
