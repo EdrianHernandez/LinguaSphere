@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { checkGrammar } from '../services/geminiService';
 import { Sparkles, ArrowRight, Bot } from 'lucide-react';
 
-const GrammarAIDemo: React.FC = () => {
+const GrammarAIDemo = () => {
   const [inputText, setInputText] = useState('');
-  const [feedback, setFeedback] = useState<string | null>(null);
+  const [feedback, setFeedback] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
   const handleCheck = async () => {
