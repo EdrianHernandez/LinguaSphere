@@ -3,7 +3,11 @@ import { GoogleGenAI } from "@google/genai";
 const apiKey = process.env.API_KEY || '';
 const ai = new GoogleGenAI({ apiKey });
 
-export const checkGrammar = async (text: string): Promise<string> => {
+/**
+ * Checks the grammar of a given string using the Gemini AI model.
+ * @param {string} text
+ */
+export const checkGrammar = async (text) => {
   if (!apiKey) {
     return "API Key is missing. Unable to check grammar.";
   }
