@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { Feature } from '../types';
 import { Video, BookOpen, WifiOff, Zap, X } from 'lucide-react';
 import GrammarAIDemo from './GrammarAIDemo';
 
-const features: Feature[] = [
+const features = [
   {
     id: 'live-tutors',
     title: 'Live Tutors',
@@ -35,10 +34,10 @@ const features: Feature[] = [
   }
 ];
 
-const FeaturesList: React.FC = () => {
+const FeaturesList = () => {
   const [showAIDemo, setShowAIDemo] = useState(false);
 
-  const getIcon = (iconName: string) => {
+  const getIcon = (iconName) => {
     switch (iconName) {
       case 'video': return <Video size={32} />;
       case 'zap': return <Zap size={32} />;
