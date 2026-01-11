@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { SupportedLanguage } from '../types';
 import { Globe, ChevronDown, Check } from 'lucide-react';
 
-const LanguageHero: React.FC = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState<SupportedLanguage>(SupportedLanguage.SPANISH);
+const LanguageHero = () => {
+  const [selectedLanguage, setSelectedLanguage] = useState(SupportedLanguage.SPANISH);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
   
-  const handleSelectLanguage = (lang: SupportedLanguage) => {
+  const handleSelectLanguage = (lang) => {
     setSelectedLanguage(lang);
     setIsDropdownOpen(false);
   };
