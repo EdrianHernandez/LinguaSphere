@@ -1,7 +1,6 @@
 import React from 'react';
-import { Testimonial } from '../types';
 
-const testimonials: Testimonial[] = [
+const testimonials = [
   {
     id: '1',
     name: 'Sarah Chen',
@@ -28,7 +27,7 @@ const testimonials: Testimonial[] = [
   }
 ];
 
-const TestimonialGrid: React.FC = () => {
+const TestimonialGrid = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
